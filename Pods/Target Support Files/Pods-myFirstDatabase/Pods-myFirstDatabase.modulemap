@@ -1,0 +1,6 @@
+framework module Pods_myFirstDatabase {
+  umbrella header "Pods-myFirstDatabase-umbrella.h"
+
+  export *
+  module * { export * }
+}
