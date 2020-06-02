@@ -3,20 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49287ED3BF249BFC08930A8F /* Pods_myFirstDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A2B44A02C72D6AEE6C067 /* Pods_myFirstDatabase.framework */; };
 		AD9230F824409386001EEE9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9230F724409386001EEE9F /* AppDelegate.swift */; };
 		AD9230FA24409386001EEE9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9230F924409386001EEE9F /* SceneDelegate.swift */; };
 		AD9230FC24409386001EEE9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9230FB24409386001EEE9F /* ViewController.swift */; };
 		AD9230FF24409386001EEE9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9230FD24409386001EEE9F /* Main.storyboard */; };
 		AD92310124409387001EEE9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD92310024409387001EEE9F /* Assets.xcassets */; };
 		AD92310424409387001EEE9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD92310224409387001EEE9F /* LaunchScreen.storyboard */; };
+		AD9A1A902446025600945AB6 /* iconApp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD9A1A8F2446025600945AB6 /* iconApp.jpg */; };
+		AD9A1A922446033500945AB6 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9A1A912446033500945AB6 /* AuthViewController.swift */; };
+		AD9A1A94244614B400945AB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD9A1A93244614B400945AB6 /* GoogleService-Info.plist */; };
+		ADEF15412453350C00764F21 /* TableViewControllerForSalons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF15402453350C00764F21 /* TableViewControllerForSalons.swift */; };
+		ADEF15432453353600764F21 /* ModelForSalons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF15422453353600764F21 /* ModelForSalons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AD9230F424409386001EEE9F /* myFirstDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFirstDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C7A2B44A02C72D6AEE6C067 /* Pods_myFirstDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myFirstDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A204B6D4FA467D2EB523201E /* Pods-myFirstDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstDatabase.release.xcconfig"; path = "Target Support Files/Pods-myFirstDatabase/Pods-myFirstDatabase.release.xcconfig"; sourceTree = "<group>"; };
+		AD9230F424409386001EEE9F /* DoForMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoForMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9230F724409386001EEE9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD9230F924409386001EEE9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AD9230FB24409386001EEE9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		AD92310024409387001EEE9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD92310324409387001EEE9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD92310524409387001EEE9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD9A1A8F2446025600945AB6 /* iconApp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iconApp.jpg; sourceTree = "<group>"; };
+		AD9A1A912446033500945AB6 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		AD9A1A93244614B400945AB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADEF15402453350C00764F21 /* TableViewControllerForSalons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerForSalons.swift; sourceTree = "<group>"; };
+		ADEF15422453353600764F21 /* ModelForSalons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForSalons.swift; sourceTree = "<group>"; };
+		F134D8B6BDE3466165844D20 /* Pods-myFirstDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstDatabase.debug.xcconfig"; path = "Target Support Files/Pods-myFirstDatabase/Pods-myFirstDatabase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,24 +45,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49287ED3BF249BFC08930A8F /* Pods_myFirstDatabase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E24A47C25529C5455F2DDA2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C7A2B44A02C72D6AEE6C067 /* Pods_myFirstDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD9230EB24409386001EEE9F = {
 			isa = PBXGroup;
 			children = (
 				AD9230F624409386001EEE9F /* myFirstDatabase */,
 				AD9230F524409386001EEE9F /* Products */,
+				C7668C4D9567E85559AEFB60 /* Pods */,
+				5E24A47C25529C5455F2DDA2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		AD9230F524409386001EEE9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD9230F424409386001EEE9F /* myFirstDatabase.app */,
+				AD9230F424409386001EEE9F /* DoForMe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,32 +84,48 @@
 				AD9230F724409386001EEE9F /* AppDelegate.swift */,
 				AD9230F924409386001EEE9F /* SceneDelegate.swift */,
 				AD9230FB24409386001EEE9F /* ViewController.swift */,
+				ADEF15402453350C00764F21 /* TableViewControllerForSalons.swift */,
 				AD9230FD24409386001EEE9F /* Main.storyboard */,
+				ADEF15422453353600764F21 /* ModelForSalons.swift */,
+				AD9A1A912446033500945AB6 /* AuthViewController.swift */,
 				AD92310024409387001EEE9F /* Assets.xcassets */,
+				AD9A1A8F2446025600945AB6 /* iconApp.jpg */,
 				AD92310224409387001EEE9F /* LaunchScreen.storyboard */,
+				AD9A1A93244614B400945AB6 /* GoogleService-Info.plist */,
 				AD92310524409387001EEE9F /* Info.plist */,
 			);
 			path = myFirstDatabase;
 			sourceTree = "<group>";
 		};
+		C7668C4D9567E85559AEFB60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F134D8B6BDE3466165844D20 /* Pods-myFirstDatabase.debug.xcconfig */,
+				A204B6D4FA467D2EB523201E /* Pods-myFirstDatabase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD9230F324409386001EEE9F /* myFirstDatabase */ = {
+		AD9230F324409386001EEE9F /* DoForMe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD92310824409387001EEE9F /* Build configuration list for PBXNativeTarget "myFirstDatabase" */;
+			buildConfigurationList = AD92310824409387001EEE9F /* Build configuration list for PBXNativeTarget "DoForMe" */;
 			buildPhases = (
+				D30B1C0708932B4C7537474A /* [CP] Check Pods Manifest.lock */,
 				AD9230F024409386001EEE9F /* Sources */,
 				AD9230F124409386001EEE9F /* Frameworks */,
 				AD9230F224409386001EEE9F /* Resources */,
+				3D4E5893A0429D2E9192C235 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = myFirstDatabase;
+			name = DoForMe;
 			productName = myFirstDatabase;
-			productReference = AD9230F424409386001EEE9F /* myFirstDatabase.app */;
+			productReference = AD9230F424409386001EEE9F /* DoForMe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +143,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AD9230EF24409386001EEE9F /* Build configuration list for PBXProject "myFirstDatabase" */;
+			buildConfigurationList = AD9230EF24409386001EEE9F /* Build configuration list for PBXProject "DoForMe" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +156,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD9230F324409386001EEE9F /* myFirstDatabase */,
+				AD9230F324409386001EEE9F /* DoForMe */,
 			);
 		};
 /* End PBXProject section */
@@ -125,7 +166,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9A1A902446025600945AB6 /* iconApp.jpg in Resources */,
 				AD92310424409387001EEE9F /* LaunchScreen.storyboard in Resources */,
+				AD9A1A94244614B400945AB6 /* GoogleService-Info.plist in Resources */,
 				AD92310124409387001EEE9F /* Assets.xcassets in Resources */,
 				AD9230FF24409386001EEE9F /* Main.storyboard in Resources */,
 			);
@@ -133,14 +176,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3D4E5893A0429D2E9192C235 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myFirstDatabase/Pods-myFirstDatabase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-myFirstDatabase/Pods-myFirstDatabase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-myFirstDatabase/Pods-myFirstDatabase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D30B1C0708932B4C7537474A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-myFirstDatabase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD9230F024409386001EEE9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9A1A922446033500945AB6 /* AuthViewController.swift in Sources */,
 				AD9230FC24409386001EEE9F /* ViewController.swift in Sources */,
 				AD9230F824409386001EEE9F /* AppDelegate.swift in Sources */,
 				AD9230FA24409386001EEE9F /* SceneDelegate.swift in Sources */,
+				ADEF15412453350C00764F21 /* TableViewControllerForSalons.swift in Sources */,
+				ADEF15432453353600764F21 /* ModelForSalons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +370,7 @@
 		};
 		AD92310924409387001EEE9F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F134D8B6BDE3466165844D20 /* Pods-myFirstDatabase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +389,7 @@
 		};
 		AD92310A24409387001EEE9F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A204B6D4FA467D2EB523201E /* Pods-myFirstDatabase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -319,7 +409,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD9230EF24409386001EEE9F /* Build configuration list for PBXProject "myFirstDatabase" */ = {
+		AD9230EF24409386001EEE9F /* Build configuration list for PBXProject "DoForMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD92310624409387001EEE9F /* Debug */,
@@ -328,7 +418,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD92310824409387001EEE9F /* Build configuration list for PBXNativeTarget "myFirstDatabase" */ = {
+		AD92310824409387001EEE9F /* Build configuration list for PBXNativeTarget "DoForMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD92310924409387001EEE9F /* Debug */,
