@@ -14,7 +14,12 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="e9g-0T-lqq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.2119274401" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.2119274401" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="separatorColor" white="0.2119274401" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexColor" white="0.2119274401" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.21192744006849315" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexTrackingBackgroundColor" white="0.2119274401" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" textLabel="vrn-ge-zuQ" style="IBUITableViewCellStyleDefault" id="3dr-6B-vDY">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.666667938232422"/>
@@ -32,9 +37,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="dqN-FM-jOu" kind="show" id="NMs-co-jKx"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -43,7 +45,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Салоны" id="Cgj-Jb-Ohd">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="xgz-tq-Hcl">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="xgz-tq-Hcl">
                             <connections>
                                 <action selector="pushAddSalon:" destination="uwC-v5-3FH" id="rHQ-yl-x4o"/>
                             </connections>
@@ -79,7 +81,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Услуги" id="G6W-nh-yTM">
                         <rightBarButtonItems>
-                            <barButtonItem title="Add" id="bZR-g5-cIV"/>
+                            <barButtonItem systemItem="add" id="bZR-g5-cIV"/>
                             <barButtonItem title="Edit" id="ohz-7t-KUz"/>
                         </rightBarButtonItems>
                     </navigationItem>
@@ -97,29 +99,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6R-3d-2MS">
-                                <rect key="frame" x="143" y="431" width="141" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <rect key="frame" x="133" y="427" width="149" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4G6-CI-Jeu">
-                                <rect key="frame" x="131" y="344" width="153" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyq-Ho-AZ7">
+                                <rect key="frame" x="141" y="252" width="132" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="Профиль">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4G6-CI-Jeu">
+                                <rect key="frame" x="154" y="329" width="107" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
                                 <state key="normal" title="Салоны">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="uwC-v5-3FH" kind="show" id="p9M-ll-icj"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.2129976455479452" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="E6R-3d-2MS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="137" id="5nA-Mb-Rau"/>
-                            <constraint firstItem="E6R-3d-2MS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="343" id="7aY-HA-Gi8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E6R-3d-2MS" secondAttribute="bottom" constant="396" id="MFd-V0-SB2"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E6R-3d-2MS" secondAttribute="trailing" constant="136" id="hOa-VQ-8qc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E6R-3d-2MS" secondAttribute="trailing" constant="140" id="ZaU-qC-hPF"/>
+                            <constraint firstItem="E6R-3d-2MS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="125" id="dyD-cr-9Gp"/>
+                            <constraint firstItem="E6R-3d-2MS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="339" id="g5k-mR-rbI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E6R-3d-2MS" secondAttribute="bottom" constant="392" id="jJJ-kA-x6n"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -134,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1439" y="78"/>
+            <point key="canvasLocation" x="1437.68115942029" y="77.678571428571431"/>
         </scene>
         <!--Auth View Controller-->
         <scene sceneID="ZTy-81-WhF">
@@ -297,10 +304,6 @@
             <point key="canvasLocation" x="4593" y="-660"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="NMs-co-jKx"/>
-        <segue reference="p9M-ll-icj"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="iconApp.jpg" width="2880" height="1620"/>
     </resources>
