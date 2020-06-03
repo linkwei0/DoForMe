@@ -35,6 +35,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func showModalAuth(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let newvc = storyboard.instantiateViewController(withIdentifier: "AuthViewController") as! AuthViewController
+        newvc.modalPresentationStyle = .fullScreen
         self.window?.rootViewController?.present(newvc, animated: true, completion: nil)
     }
     func sceneWillResignActive(_ scene: UIScene) {
