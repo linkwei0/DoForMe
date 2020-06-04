@@ -31,12 +31,17 @@
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vrn-ge-zuQ">
                                             <rect key="frame" x="20" y="0.0" width="374" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="dqN-FM-jOu" kind="show" id="aFN-ex-fuN"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -124,6 +129,9 @@
                                 <state key="normal" title="Салоны">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="uwC-v5-3FH" kind="show" id="l3j-5f-vYR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.2129976455479452" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -309,6 +317,10 @@
             <point key="canvasLocation" x="4593" y="-660"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="aFN-ex-fuN"/>
+        <segue reference="l3j-5f-vYR"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="iconApp.jpg" width="2880" height="1620"/>
     </resources>

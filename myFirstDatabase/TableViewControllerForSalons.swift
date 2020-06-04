@@ -39,7 +39,7 @@ class TableViewControllerForSalons: UITableViewController {
         super.viewDidLoad()
         
         tableView.tableFooterView = UIView()
-        tableView.backgroundColor = UIColor.systemGray5
+        //tableView.backgroundColor = UIColor.systemGray5
     }
 
     // MARK: - Table view data source
@@ -56,7 +56,33 @@ class TableViewControllerForSalons: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
+        let num = Int.random(in: 0 ..< 5)
+         
+        switch num {
+        case 0:
+            print("Переменная равна", num)
             cell.backgroundColor = UIColor.systemGray3
+        case 1:
+            print("Переменная равна", num)
+            cell.backgroundColor = UIColor.systemRed
+        case 2:
+            print("Переменная равна", num)
+            cell.backgroundColor = UIColor.systemBlue
+        case 3:
+            print("Переменная равна", num)
+            cell.backgroundColor = UIColor.systemPink
+        case 4:
+            print("Переменная равна", num)
+            cell.backgroundColor = UIColor.systemGreen
+        case 5:
+            print("Переменная равна", num)
+            cell.backgroundColor = UIColor.systemYellow
+        default:
+            print("не удалось распознать число")
+        }
+       // cell.textLabel? = UIFont.boldSystemFont(ofSize: 18)
+        
+            //cell.backgroundColor = UIColor.systemGray3
         
         //cell.backgroundColor = UIColor.systemGray3
         
@@ -64,6 +90,8 @@ class TableViewControllerForSalons: UITableViewController {
         cell.textLabel?.text = Salons[indexPath.row]
         return cell
     }
+    
+ 
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -80,6 +108,7 @@ class TableViewControllerForSalons: UITableViewController {
 //        // Return false if you do not want the specified item to be editable.
 //        return true
 //    }
+    
 
     // Override to support editing the table view.
 //    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
