@@ -32,4 +32,6 @@ func addItem(nameItem: String){
 //    return Salons[item]["isCompleted"] as! Bool
 //}
 
-
+func removeItem(at index: Int){
+    Salons.remove(at: index)
+}
