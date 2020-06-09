@@ -96,7 +96,11 @@
                                     <action selector="addBtn:" destination="dqN-FM-jOu" id="bXV-B1-dnB"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Edit" id="ohz-7t-KUz"/>
+                            <barButtonItem title="Edit" id="ohz-7t-KUz">
+                                <connections>
+                                    <action selector="pushBtnEdit:" destination="dqN-FM-jOu" id="b2r-VF-DW2"/>
+                                </connections>
+                            </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>

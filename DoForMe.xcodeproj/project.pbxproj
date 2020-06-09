@@ -87,6 +87,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		AD8B6389248F7A58001FE952 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AD9230FD24409386001EEE9F /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AD9230EB24409386001EEE9F = {
 			isa = PBXGroup;
 			children = (
@@ -108,11 +116,11 @@
 		AD9230F624409386001EEE9F /* myFirstDatabase */ = {
 			isa = PBXGroup;
 			children = (
-				AD5A4AFE248D5CA300D3DBE8 /* Controller */,
 				AD5A4AFD248D5C9900D3DBE8 /* Model */,
+				AD8B6389248F7A58001FE952 /* View */,
+				AD5A4AFE248D5CA300D3DBE8 /* Controller */,
 				AD9230F724409386001EEE9F /* AppDelegate.swift */,
 				AD9230F924409386001EEE9F /* SceneDelegate.swift */,
-				AD9230FD24409386001EEE9F /* Main.storyboard */,
 				AD92310024409387001EEE9F /* Assets.xcassets */,
 				AD9A1A8F2446025600945AB6 /* iconApp.jpg */,
 				AD92310224409387001EEE9F /* LaunchScreen.storyboard */,

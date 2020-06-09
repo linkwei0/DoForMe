@@ -15,7 +15,11 @@ class TableViewControllerForServices: UITableViewController {
 
         tableView.tableFooterView = UIView()
     }
-
+    
+    @IBAction func pushBtnEdit(_ sender: Any) {
+        tableView.setEditing(!tableView.isEditing, animated: true)
+    }
+    
     @IBAction func addBtn(_ sender: Any) {
         
          let alertController = UIAlertController(title: "Название услуги", message: nil, preferredStyle: .alert)
@@ -51,36 +55,37 @@ class TableViewControllerForServices: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath)
-            
-            let num = Int.random(in: 0 ..< 5)
-             
-            switch num {
-            case 0:
-                print("Переменная равна", num)
-                cell.backgroundColor = UIColor.systemGray3
-            case 1:
-                print("Переменная равна", num)
-                cell.backgroundColor = UIColor.systemRed
-            case 2:
-                print("Переменная равна", num)
-                cell.backgroundColor = UIColor.systemBlue
-            case 3:
-                print("Переменная равна", num)
-                cell.backgroundColor = UIColor.systemPink
-            case 4:
-                print("Переменная равна", num)
-                cell.backgroundColor = UIColor.systemGreen
-            case 5:
-                print("Переменная равна", num)
-                cell.backgroundColor = UIColor.systemYellow
-            default:
-                print("не удалось распознать число")
-            }
+        
+        
+//            let num = Int.random(in: 0 ..< 5)
+//
+//            switch num {
+//            case 0:
+//                print("Переменная равна", num)
+//                cell.backgroundColor = UIColor.systemGray3
+//            case 1:
+//                print("Переменная равна", num)
+//                cell.backgroundColor = UIColor.systemRed
+//            case 2:
+//                print("Переменная равна", num)
+//                cell.backgroundColor = UIColor.systemBlue
+//            case 3:
+//                print("Переменная равна", num)
+//                cell.backgroundColor = UIColor.systemPink
+//            case 4:
+//                print("Переменная равна", num)
+//                cell.backgroundColor = UIColor.systemGreen
+//            case 5:
+//                print("Переменная равна", num)
+//                cell.backgroundColor = UIColor.systemYellow
+//            default:
+//                print("не удалось распознать число")
+//            }
            // cell.textLabel? = UIFont.boldSystemFont(ofSize: 18)
             
                 //cell.backgroundColor = UIColor.systemGray3
             
-            //cell.backgroundColor = UIColor.systemGray3
+            cell.backgroundColor = UIColor.systemGray3
         
             cell.textLabel?.text = Services[indexPath.row]
             return cell
@@ -94,17 +99,35 @@ class TableViewControllerForServices: UITableViewController {
     }
     */
 
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
+     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+         if editingStyle == .delete {
+             // Delete the row from the data source
+             removeItemServices(at: indexPath.row)
+             tableView.deleteRows(at: [indexPath], with: .fade)
+         } else if editingStyle == .insert {
+             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+         }
+     }
+    
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+
+        moveItem(fromIndex: fromIndexPath.row, toIndex: to.row)
+        
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
+        if tableView.isEditing{
+            return .none
+        }
+        else{
+            return .delete
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, shouldIndentWhileEditingRowAt indexPath: IndexPath) -> Bool {
+        return false
+    }
+
 
     /*
     // Override to support rearranging the table view.
