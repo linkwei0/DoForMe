@@ -27,11 +27,6 @@ func addItem(nameItem: String){
     Salons.append(nameItem)
 }
 
-//func changeState(at item: Int) -> Bool{
-//    Salons[item]["isCompleted"] = !(Salons[item]["isCompleted"] as! Bool)
-//    return Salons[item]["isCompleted"] as! Bool
-//}
-
 func removeItem(at index: Int){
     Salons.remove(at: index)
 }

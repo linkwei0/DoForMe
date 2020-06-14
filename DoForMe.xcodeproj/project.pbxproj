@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		49287ED3BF249BFC08930A8F /* Pods_myFirstDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7A2B44A02C72D6AEE6C067 /* Pods_myFirstDatabase.framework */; };
+		AD0A9C262493D13D000BDE65 /* TableVCMasters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0A9C252493D13D000BDE65 /* TableVCMasters.swift */; };
+		AD0A9C282493D1BA000BDE65 /* ModelMasters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0A9C272493D1BA000BDE65 /* ModelMasters.swift */; };
 		AD12C8A1248780860028F146 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD12C8A0248780860028F146 /* CustomTextField.swift */; };
-		AD5A4AFA248D598600D3DBE8 /* TableViewControllerForServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5A4AF9248D598600D3DBE8 /* TableViewControllerForServices.swift */; };
-		AD5A4AFC248D5A8100D3DBE8 /* ModelForServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5A4AFB248D5A8100D3DBE8 /* ModelForServices.swift */; };
+		AD5A4AFA248D598600D3DBE8 /* TableVCServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5A4AF9248D598600D3DBE8 /* TableVCServices.swift */; };
+		AD5A4AFC248D5A8100D3DBE8 /* ModelServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5A4AFB248D5A8100D3DBE8 /* ModelServices.swift */; };
 		AD9230F824409386001EEE9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9230F724409386001EEE9F /* AppDelegate.swift */; };
 		AD9230FA24409386001EEE9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9230F924409386001EEE9F /* SceneDelegate.swift */; };
 		AD9230FC24409386001EEE9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9230FB24409386001EEE9F /* ViewController.swift */; };
@@ -20,16 +22,18 @@
 		AD9A1A902446025600945AB6 /* iconApp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD9A1A8F2446025600945AB6 /* iconApp.jpg */; };
 		AD9A1A922446033500945AB6 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9A1A912446033500945AB6 /* AuthViewController.swift */; };
 		AD9A1A94244614B400945AB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD9A1A93244614B400945AB6 /* GoogleService-Info.plist */; };
-		ADEF15412453350C00764F21 /* TableViewControllerForSalons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF15402453350C00764F21 /* TableViewControllerForSalons.swift */; };
-		ADEF15432453353600764F21 /* ModelForSalons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF15422453353600764F21 /* ModelForSalons.swift */; };
+		ADEF15412453350C00764F21 /* TableVCSalons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF15402453350C00764F21 /* TableVCSalons.swift */; };
+		ADEF15432453353600764F21 /* ModelSalons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF15422453353600764F21 /* ModelSalons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C7A2B44A02C72D6AEE6C067 /* Pods_myFirstDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_myFirstDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A204B6D4FA467D2EB523201E /* Pods-myFirstDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstDatabase.release.xcconfig"; path = "Target Support Files/Pods-myFirstDatabase/Pods-myFirstDatabase.release.xcconfig"; sourceTree = "<group>"; };
+		AD0A9C252493D13D000BDE65 /* TableVCMasters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCMasters.swift; sourceTree = "<group>"; };
+		AD0A9C272493D1BA000BDE65 /* ModelMasters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMasters.swift; sourceTree = "<group>"; };
 		AD12C8A0248780860028F146 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		AD5A4AF9248D598600D3DBE8 /* TableViewControllerForServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerForServices.swift; sourceTree = "<group>"; };
-		AD5A4AFB248D5A8100D3DBE8 /* ModelForServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForServices.swift; sourceTree = "<group>"; };
+		AD5A4AF9248D598600D3DBE8 /* TableVCServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCServices.swift; sourceTree = "<group>"; };
+		AD5A4AFB248D5A8100D3DBE8 /* ModelServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelServices.swift; sourceTree = "<group>"; };
 		AD9230F424409386001EEE9F /* DoForMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoForMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9230F724409386001EEE9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD9230F924409386001EEE9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,8 +45,8 @@
 		AD9A1A8F2446025600945AB6 /* iconApp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iconApp.jpg; sourceTree = "<group>"; };
 		AD9A1A912446033500945AB6 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		AD9A1A93244614B400945AB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		ADEF15402453350C00764F21 /* TableViewControllerForSalons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerForSalons.swift; sourceTree = "<group>"; };
-		ADEF15422453353600764F21 /* ModelForSalons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForSalons.swift; sourceTree = "<group>"; };
+		ADEF15402453350C00764F21 /* TableVCSalons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCSalons.swift; sourceTree = "<group>"; };
+		ADEF15422453353600764F21 /* ModelSalons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSalons.swift; sourceTree = "<group>"; };
 		F134D8B6BDE3466165844D20 /* Pods-myFirstDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstDatabase.debug.xcconfig"; path = "Target Support Files/Pods-myFirstDatabase/Pods-myFirstDatabase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,8 +73,9 @@
 		AD5A4AFD248D5C9900D3DBE8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				ADEF15422453353600764F21 /* ModelForSalons.swift */,
-				AD5A4AFB248D5A8100D3DBE8 /* ModelForServices.swift */,
+				ADEF15422453353600764F21 /* ModelSalons.swift */,
+				AD5A4AFB248D5A8100D3DBE8 /* ModelServices.swift */,
+				AD0A9C272493D1BA000BDE65 /* ModelMasters.swift */,
 				AD12C8A0248780860028F146 /* CustomTextField.swift */,
 			);
 			path = Model;
@@ -81,8 +86,9 @@
 			children = (
 				AD9A1A912446033500945AB6 /* AuthViewController.swift */,
 				AD9230FB24409386001EEE9F /* ViewController.swift */,
-				ADEF15402453350C00764F21 /* TableViewControllerForSalons.swift */,
-				AD5A4AF9248D598600D3DBE8 /* TableViewControllerForServices.swift */,
+				ADEF15402453350C00764F21 /* TableVCSalons.swift */,
+				AD5A4AF9248D598600D3DBE8 /* TableVCServices.swift */,
+				AD0A9C252493D13D000BDE65 /* TableVCMasters.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -257,14 +263,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD12C8A1248780860028F146 /* CustomTextField.swift in Sources */,
-				AD5A4AFA248D598600D3DBE8 /* TableViewControllerForServices.swift in Sources */,
+				AD5A4AFA248D598600D3DBE8 /* TableVCServices.swift in Sources */,
 				AD9A1A922446033500945AB6 /* AuthViewController.swift in Sources */,
+				AD0A9C282493D1BA000BDE65 /* ModelMasters.swift in Sources */,
 				AD9230FC24409386001EEE9F /* ViewController.swift in Sources */,
 				AD9230F824409386001EEE9F /* AppDelegate.swift in Sources */,
 				AD9230FA24409386001EEE9F /* SceneDelegate.swift in Sources */,
-				ADEF15412453350C00764F21 /* TableViewControllerForSalons.swift in Sources */,
-				AD5A4AFC248D5A8100D3DBE8 /* ModelForServices.swift in Sources */,
-				ADEF15432453353600764F21 /* ModelForSalons.swift in Sources */,
+				ADEF15412453350C00764F21 /* TableVCSalons.swift in Sources */,
+				AD5A4AFC248D5A8100D3DBE8 /* ModelServices.swift in Sources */,
+				ADEF15432453353600764F21 /* ModelSalons.swift in Sources */,
+				AD0A9C262493D13D000BDE65 /* TableVCMasters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

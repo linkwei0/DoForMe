@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class TableViewControllerForSalons: UITableViewController {
+class TableVCSalons: UITableViewController {
 
     @IBAction func pushAddSalon(_ sender: Any) {
         
@@ -24,15 +24,26 @@ class TableViewControllerForSalons: UITableViewController {
         }
         
         let alertAction2 = UIAlertAction(title: "Ок", style: .cancel) { (alert) in
+            
             let newItem = alertController.textFields![0].text
-            addItem(nameItem: newItem!)
-            self.tableView.reloadData()
+            
+            if newItem == "" {
+                let alertErrorEmpty = UIAlertController(title: "Ошибка", message: "Заполните поле!", preferredStyle: .alert)
+                alertErrorEmpty.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                self.present(alertErrorEmpty, animated: true, completion: nil)
+            }
+                
+            else {
+                
+                addItem(nameItem: newItem!)
+                self.tableView.reloadData()
+            }
         }
-        
-        alertController.addAction(alertAction1)
-        alertController.addAction(alertAction2)
-        
-        present(alertController, animated: true, completion: nil)
+            
+            alertController.addAction(alertAction1)
+            alertController.addAction(alertAction2)
+            
+            present(alertController, animated: true, completion: nil)
     }
     
     override func viewDidLoad() {

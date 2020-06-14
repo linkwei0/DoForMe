@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewControllerForServices: UITableViewController {
+class TableVCServices: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,14 +28,22 @@ class TableViewControllerForServices: UITableViewController {
               textField.placeholder = "Введите название услуги"
           }
           
-          let alertAction1 = UIAlertAction(title: "Отменить", style: .default) { (alert) in
-              
-          }
+          let alertAction1 = UIAlertAction(title: "Отменить", style: .default) { (alert) in }
           
           let alertAction2 = UIAlertAction(title: "Ок", style: .cancel) { (alert) in
+            
               let newItem = alertController.textFields![0].text
-              addItemServices(nameItem: newItem!)
-              self.tableView.reloadData()
+            
+             if newItem == "" {
+                  let alertErrorEmpty = UIAlertController(title: "Ошибка", message: "Заполните поле!", preferredStyle: .alert)
+                  alertErrorEmpty.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                  self.present(alertErrorEmpty, animated: true, completion: nil)
+              }
+                  
+              else {
+                  addItemServices(nameItem: newItem!)
+                  self.tableView.reloadData()
+              }
           }
           
           alertController.addAction(alertAction1)
@@ -54,42 +62,16 @@ class TableViewControllerForServices: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath)
         
         
-//            let num = Int.random(in: 0 ..< 5)
-//
-//            switch num {
-//            case 0:
-//                print("Переменная равна", num)
-//                cell.backgroundColor = UIColor.systemGray3
-//            case 1:
-//                print("Переменная равна", num)
-//                cell.backgroundColor = UIColor.systemRed
-//            case 2:
-//                print("Переменная равна", num)
-//                cell.backgroundColor = UIColor.systemBlue
-//            case 3:
-//                print("Переменная равна", num)
-//                cell.backgroundColor = UIColor.systemPink
-//            case 4:
-//                print("Переменная равна", num)
-//                cell.backgroundColor = UIColor.systemGreen
-//            case 5:
-//                print("Переменная равна", num)
-//                cell.backgroundColor = UIColor.systemYellow
-//            default:
-//                print("не удалось распознать число")
-//            }
-           // cell.textLabel? = UIFont.boldSystemFont(ofSize: 18)
-            
-                //cell.backgroundColor = UIColor.systemGray3
-            
-            cell.backgroundColor = UIColor.systemGray3
+        cell.backgroundColor = UIColor.systemBlue
+        cell.textLabel?.font = UIFont(name: "Avenir", size: 23)
         
-            cell.textLabel?.text = Services[indexPath.row]
-            return cell
-        }
+        
+        cell.textLabel?.text = Services[indexPath.row]
+        return cell
+    }
 
     /*
     // Override to support conditional editing of the table view.
