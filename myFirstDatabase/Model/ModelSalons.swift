@@ -8,23 +8,23 @@
 
 import Foundation
 
-var Salons = [String]() //{
-//    set{
-//        UserDefaults.standard.set(newValue, forKey: "SalonsKey")
-//        UserDefaults.standard.synchronize()
-//    }
-//    get{
-//        if let array = UserDefaults.standard.array(forKey: "SalonsKey") as? [[String: Any]]{
-//            return array
-//        }
-//        else{
-//            return []
-//        }
-//    }
-//}
+var Salons: [[String: Any]] {
+    set{
+        UserDefaults.standard.set(newValue, forKey: "SalonKey")
+        UserDefaults.standard.synchronize()
+    }
+    get{
+        if let array = UserDefaults.standard.array(forKey: "SalonKey") as? [[String: Any]]{
+            return array
+        }
+        else{
+            return []
+        }
+    }
+}
 
 func addItem(nameItem: String){
-    Salons.append(nameItem)
+    Salons.append(["Name": nameItem])
 }
 
 func removeItem(at index: Int){

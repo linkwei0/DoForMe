@@ -22,6 +22,7 @@
 		AD9A1A902446025600945AB6 /* iconApp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD9A1A8F2446025600945AB6 /* iconApp.jpg */; };
 		AD9A1A922446033500945AB6 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9A1A912446033500945AB6 /* AuthViewController.swift */; };
 		AD9A1A94244614B400945AB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD9A1A93244614B400945AB6 /* GoogleService-Info.plist */; };
+		ADA5E2D52496281400D1EFC2 /* descriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E2D42496281400D1EFC2 /* descriptionVC.swift */; };
 		ADEF15412453350C00764F21 /* TableVCSalons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF15402453350C00764F21 /* TableVCSalons.swift */; };
 		ADEF15432453353600764F21 /* ModelSalons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF15422453353600764F21 /* ModelSalons.swift */; };
 /* End PBXBuildFile section */
@@ -45,6 +46,7 @@
 		AD9A1A8F2446025600945AB6 /* iconApp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iconApp.jpg; sourceTree = "<group>"; };
 		AD9A1A912446033500945AB6 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		AD9A1A93244614B400945AB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		ADA5E2D42496281400D1EFC2 /* descriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = descriptionVC.swift; sourceTree = "<group>"; };
 		ADEF15402453350C00764F21 /* TableVCSalons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCSalons.swift; sourceTree = "<group>"; };
 		ADEF15422453353600764F21 /* ModelSalons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSalons.swift; sourceTree = "<group>"; };
 		F134D8B6BDE3466165844D20 /* Pods-myFirstDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstDatabase.debug.xcconfig"; path = "Target Support Files/Pods-myFirstDatabase/Pods-myFirstDatabase.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				ADEF15402453350C00764F21 /* TableVCSalons.swift */,
 				AD5A4AF9248D598600D3DBE8 /* TableVCServices.swift */,
 				AD0A9C252493D13D000BDE65 /* TableVCMasters.swift */,
+				ADA5E2D42496281400D1EFC2 /* descriptionVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				AD12C8A1248780860028F146 /* CustomTextField.swift in Sources */,
 				AD5A4AFA248D598600D3DBE8 /* TableVCServices.swift in Sources */,
 				AD9A1A922446033500945AB6 /* AuthViewController.swift in Sources */,
+				ADA5E2D52496281400D1EFC2 /* descriptionVC.swift in Sources */,
 				AD0A9C282493D1BA000BDE65 /* ModelMasters.swift in Sources */,
 				AD9230FC24409386001EEE9F /* ViewController.swift in Sources */,
 				AD9230F824409386001EEE9F /* AppDelegate.swift in Sources */,

@@ -34,7 +34,6 @@ class TableVCSalons: UITableViewController {
             }
                 
             else {
-                
                 addItem(nameItem: newItem!)
                 self.tableView.reloadData()
             }
@@ -97,8 +96,9 @@ class TableVCSalons: UITableViewController {
         
         //cell.backgroundColor = UIColor.systemGray3
         
-        // Configure the cell...
-        cell.textLabel?.text = Salons[indexPath.row]
+        let currentItem = Salons[indexPath.row]
+        cell.textLabel?.text = currentItem["Name"] as? String
+        //cell.textLabel?.text = Salons[indexPath.row]
         return cell
     }
     
