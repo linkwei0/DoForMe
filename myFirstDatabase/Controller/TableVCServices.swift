@@ -16,9 +16,20 @@ class TableVCServices: UITableViewController {
         tableView.tableFooterView = UIView()
     }
     
+    @IBAction func infoService(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Стрижка", message: "", preferredStyle: UIAlertController.Style.alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
     @IBAction func pushBtnEdit(_ sender: Any) {
         tableView.setEditing(!tableView.isEditing, animated: true)
     }
+    
     
     @IBAction func addBtn(_ sender: Any) {
         
@@ -69,7 +80,8 @@ class TableVCServices: UITableViewController {
         cell.textLabel?.font = UIFont(name: "Avenir", size: 23)
         
         
-        cell.textLabel?.text = Services[indexPath.row]
+        let currentItem = Services[indexPath.row]
+        cell.textLabel?.text = currentItem["Name"] as? String
         return cell
     }
 

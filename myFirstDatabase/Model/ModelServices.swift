@@ -8,10 +8,24 @@
 
 import Foundation
 
-var Services = [String]()
+
+var Services: [[String: Any]] {
+    set{
+        UserDefaults.standard.set(newValue, forKey: "ServiceKey")
+        UserDefaults.standard.synchronize()
+    }
+    get{
+        if let array = UserDefaults.standard.array(forKey: "ServiceKey") as? [[String: Any]]{
+            return array
+        }
+        else{
+            return []
+        }
+    }
+}
 
 func addItemServices(nameItem: String){
-    Services.append(nameItem)
+    Services.append(["Name": nameItem])
 }
 
 func removeItemServices(at index: Int){
