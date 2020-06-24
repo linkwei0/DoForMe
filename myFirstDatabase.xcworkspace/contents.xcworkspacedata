@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/artembacanov/Downloads/Developer-Swift/myFirstDatabase/DoForMe.xcodeproj">
+      location = "group:/Users/artembacanov/Downloads/Developer-Swift/myFirstDatabase/myFirstDatabase.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

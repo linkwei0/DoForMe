@@ -12,19 +12,15 @@ class TableVCServices: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        hideNavigationBar()
 
         tableView.tableFooterView = UIView()
     }
     
-    @IBAction func infoService(_ sender: Any) {
-        
-        let alert = UIAlertController(title: "Стрижка", message: "", preferredStyle: UIAlertController.Style.alert)
-        
-        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-
-        self.present(alert, animated: true, completion: nil)
+    func hideNavigationBar() {
+        navigationItem.largeTitleDisplayMode = .never
     }
-    
     
     @IBAction func pushBtnEdit(_ sender: Any) {
         tableView.setEditing(!tableView.isEditing, animated: true)
@@ -62,7 +58,36 @@ class TableVCServices: UITableViewController {
           
           present(alertController, animated: true, completion: nil)
     }
+    
     // MARK: - Table view data source
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //print(label["Name"] ?? "")
+        let cellIndex = indexPath.row // index of selected cell
+        let intCell = funcId(index: cellIndex) //Возвращает int индекс ячейки
+        let nameOfCell = Services[intCell] // имя ячейки
+        let alert = UIAlertController(title: nameOfCell["Name"] as? String , message: nil, preferredStyle: UIAlertController.Style.alert)
+        
+        if nameOfCell["Name"] as? String == "Стрижка" || nameOfCell["Name"] as? String == "стрижка" {
+            alert.message = " Модельная - 399 руб" + "\nПод 0, 0.1, 0.6 - 150 руб" + "\nПенсионерам - 99 руб"
+        }
+        
+        if nameOfCell["Name"] as? String == "Массаж" || nameOfCell["Name"] as? String == "массаж" {
+            alert.message = " Расслабляющая - 499 руб" + "\nВосстанавливающий - 599 руб" + "\nТайский - 399 руб"
+        }
+        
+        if nameOfCell["Name"] as? String == "Маникюр" || nameOfCell["Name"] as? String == "маникюр" {
+            alert.message = "от 399 руб"
+        }
+        
+        if nameOfCell["Name"] as? String == "Педикюр" || nameOfCell["Name"] as? String == "педикюр" {
+            alert.message = "от 399 руб"
+        }
+        
+       
+        
+        present(alert, animated: true, completion: nil)
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -76,7 +101,7 @@ class TableVCServices: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath)
         
         
-        cell.backgroundColor = UIColor.systemBlue
+        cell.backgroundColor = UIColor.systemGray3
         cell.textLabel?.font = UIFont(name: "Avenir", size: 23)
         
         

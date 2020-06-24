@@ -7,6 +7,7 @@ target 'myFirstDatabase' do
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
+  pod 'Firebase/Firestore'
   # Pods for myFirstDatabase
 
 end

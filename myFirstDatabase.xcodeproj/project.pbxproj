@@ -19,7 +19,6 @@
 		AD9230FF24409386001EEE9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9230FD24409386001EEE9F /* Main.storyboard */; };
 		AD92310124409387001EEE9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD92310024409387001EEE9F /* Assets.xcassets */; };
 		AD92310424409387001EEE9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD92310224409387001EEE9F /* LaunchScreen.storyboard */; };
-		AD9A1A902446025600945AB6 /* iconApp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD9A1A8F2446025600945AB6 /* iconApp.jpg */; };
 		AD9A1A922446033500945AB6 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9A1A912446033500945AB6 /* AuthViewController.swift */; };
 		AD9A1A94244614B400945AB6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD9A1A93244614B400945AB6 /* GoogleService-Info.plist */; };
 		ADA5E2D52496281400D1EFC2 /* descriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E2D42496281400D1EFC2 /* descriptionVC.swift */; };
@@ -35,7 +34,7 @@
 		AD12C8A0248780860028F146 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AD5A4AF9248D598600D3DBE8 /* TableVCServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCServices.swift; sourceTree = "<group>"; };
 		AD5A4AFB248D5A8100D3DBE8 /* ModelServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelServices.swift; sourceTree = "<group>"; };
-		AD9230F424409386001EEE9F /* DoForMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoForMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD9230F424409386001EEE9F /* myFirstDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myFirstDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9230F724409386001EEE9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD9230F924409386001EEE9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AD9230FB24409386001EEE9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -43,7 +42,6 @@
 		AD92310024409387001EEE9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD92310324409387001EEE9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD92310524409387001EEE9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AD9A1A8F2446025600945AB6 /* iconApp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iconApp.jpg; sourceTree = "<group>"; };
 		AD9A1A912446033500945AB6 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		AD9A1A93244614B400945AB6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		ADA5E2D42496281400D1EFC2 /* descriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = descriptionVC.swift; sourceTree = "<group>"; };
@@ -117,7 +115,7 @@
 		AD9230F524409386001EEE9F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AD9230F424409386001EEE9F /* DoForMe.app */,
+				AD9230F424409386001EEE9F /* myFirstDatabase.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,7 +129,6 @@
 				AD9230F724409386001EEE9F /* AppDelegate.swift */,
 				AD9230F924409386001EEE9F /* SceneDelegate.swift */,
 				AD92310024409387001EEE9F /* Assets.xcassets */,
-				AD9A1A8F2446025600945AB6 /* iconApp.jpg */,
 				AD92310224409387001EEE9F /* LaunchScreen.storyboard */,
 				AD9A1A93244614B400945AB6 /* GoogleService-Info.plist */,
 				AD92310524409387001EEE9F /* Info.plist */,
@@ -151,9 +148,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AD9230F324409386001EEE9F /* DoForMe */ = {
+		AD9230F324409386001EEE9F /* myFirstDatabase */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AD92310824409387001EEE9F /* Build configuration list for PBXNativeTarget "DoForMe" */;
+			buildConfigurationList = AD92310824409387001EEE9F /* Build configuration list for PBXNativeTarget "myFirstDatabase" */;
 			buildPhases = (
 				D30B1C0708932B4C7537474A /* [CP] Check Pods Manifest.lock */,
 				AD9230F024409386001EEE9F /* Sources */,
@@ -165,9 +162,9 @@
 			);
 			dependencies = (
 			);
-			name = DoForMe;
+			name = myFirstDatabase;
 			productName = myFirstDatabase;
-			productReference = AD9230F424409386001EEE9F /* DoForMe.app */;
+			productReference = AD9230F424409386001EEE9F /* myFirstDatabase.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -185,7 +182,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AD9230EF24409386001EEE9F /* Build configuration list for PBXProject "DoForMe" */;
+			buildConfigurationList = AD9230EF24409386001EEE9F /* Build configuration list for PBXProject "myFirstDatabase" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -198,7 +195,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AD9230F324409386001EEE9F /* DoForMe */,
+				AD9230F324409386001EEE9F /* myFirstDatabase */,
 			);
 		};
 /* End PBXProject section */
@@ -208,7 +205,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD9A1A902446025600945AB6 /* iconApp.jpg in Resources */,
 				AD92310424409387001EEE9F /* LaunchScreen.storyboard in Resources */,
 				AD9A1A94244614B400945AB6 /* GoogleService-Info.plist in Resources */,
 				AD92310124409387001EEE9F /* Assets.xcassets in Resources */,
@@ -429,7 +425,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = start.myFirstDatabase;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = myFirstDatabase;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,7 +444,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = start.myFirstDatabase;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = myFirstDatabase;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -457,7 +453,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AD9230EF24409386001EEE9F /* Build configuration list for PBXProject "DoForMe" */ = {
+		AD9230EF24409386001EEE9F /* Build configuration list for PBXProject "myFirstDatabase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD92310624409387001EEE9F /* Debug */,
@@ -466,7 +462,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD92310824409387001EEE9F /* Build configuration list for PBXNativeTarget "DoForMe" */ = {
+		AD92310824409387001EEE9F /* Build configuration list for PBXNativeTarget "myFirstDatabase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AD92310924409387001EEE9F /* Debug */,

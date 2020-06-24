@@ -24,6 +24,11 @@ var Services: [[String: Any]] {
     }
 }
 
+func funcId(index: Int) -> Int{
+    print(index)
+    return index
+}
+
 func addItemServices(nameItem: String){
     Services.append(["Name": nameItem])
 }

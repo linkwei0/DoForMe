@@ -10,7 +10,7 @@
         <!--Салоны-->
         <scene sceneID="EBR-vL-mmr">
             <objects>
-                <tableViewController storyboardIdentifier="TableViewControllerForSalons" id="uwC-v5-3FH" customClass="TableVCSalons" customModule="DoForMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="TableViewControllerForSalons" storyboardIdentifier="TableViewControllerForSalons" id="uwC-v5-3FH" customClass="TableVCSalons" customModule="DoForMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="e9g-0T-lqq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
         <!--Услуги-->
         <scene sceneID="37e-kJ-I85">
             <objects>
-                <tableViewController id="dqN-FM-jOu" customClass="TableVCServices" customModule="DoForMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="servicesController" storyboardIdentifier="servicesController" id="dqN-FM-jOu" customClass="TableVCServices" customModule="DoForMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nqg-6a-cCR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,20 +89,13 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uh2-x7-GzO">
-                                            <rect key="frame" x="322" y="0.0" width="62" height="44"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconfinder_info_370079" translatesAutoresizingMaskIntoConstraints="NO" id="1Kl-sm-CBh">
+                                            <rect key="frame" x="360" y="11" width="34" height="41"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                            <state key="normal" title="инфо"/>
-                                            <connections>
-                                                <action selector="infoService:" destination="dqN-FM-jOu" eventType="touchUpInside" id="IE7-Wu-Rhu"/>
-                                            </connections>
-                                        </button>
+                                            <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="light"/>
+                                        </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="XLa-Wx-Bdl" kind="show" id="r8v-rJ-ksR"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -127,12 +120,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqx-Gv-cJt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4593" y="78"/>
+            <point key="canvasLocation" x="4592.753623188406" y="77.678571428571431"/>
         </scene>
         <!--Мастер-->
         <scene sceneID="71l-KU-Xzp">
             <objects>
-                <tableViewController id="XLa-Wx-Bdl" customClass="TableVCMasters" customModule="DoForMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="mastersController" storyboardIdentifier="mastersController" id="XLa-Wx-Bdl" customClass="TableVCMasters" customModule="DoForMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jZh-rq-KLG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -527,11 +520,11 @@
     <inferredMetricsTieBreakers>
         <segue reference="Hzx-ZF-pn2"/>
         <segue reference="AIv-ud-Hyg"/>
-        <segue reference="r8v-rJ-ksR"/>
         <segue reference="aFN-ex-fuN"/>
         <segue reference="l3j-5f-vYR"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="iconApp.jpg" width="2880" height="1620"/>
+        <image name="iconfinder_info_370079" width="64" height="64"/>
     </resources>
 </document>
