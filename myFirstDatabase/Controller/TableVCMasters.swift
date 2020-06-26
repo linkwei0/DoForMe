@@ -13,8 +13,16 @@ class TableVCMasters: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        setupNavBar()
+        
         tableView.tableFooterView = UIView()
     }
+    
+    func setupNavBar() {
+           navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+           navigationController?.navigationBar.shadowImage = UIImage()
+           navigationController?.navigationBar.tintColor = .white
+       }
 
     @IBAction func btnAddMaster(_ sender: Any) {
         
@@ -64,7 +72,7 @@ class TableVCMasters: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CellMaster", for: indexPath)
         
         
-        cell.backgroundColor = UIColor.systemGray2
+        cell.backgroundColor = UIColor.systemBlue
         cell.textLabel?.font = UIFont(name: "Avenir", size: 22)
         //cell.tintColor = UIColor.systemBlue
         

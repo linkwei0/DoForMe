@@ -14,9 +14,16 @@ class TableVCServices: UITableViewController {
         super.viewDidLoad()
         
         hideNavigationBar()
-
+        setupNavBar()
+        
         tableView.tableFooterView = UIView()
     }
+    
+    func setupNavBar() {
+           navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+           navigationController?.navigationBar.shadowImage = UIImage()
+           navigationController?.navigationBar.tintColor = .white
+       }
     
     func hideNavigationBar() {
         navigationItem.largeTitleDisplayMode = .never
@@ -83,12 +90,11 @@ class TableVCServices: UITableViewController {
             alert.message = "от 399 руб"
         }
         
-        let alertAction1 = UIAlertAction(title: "Ок", style: .default) { (alert) in }
-        
-        let alertAction2 = UIAlertAction(title: "Мастера", style: .cancel) { (alert) in
+        let alertAction1 = UIAlertAction(title: "Мастера", style: .default) { (alert) in
             let secondViewController = self.storyboard!.instantiateViewController(withIdentifier: "mastersController") as UIViewController
             self.navigationController?.pushViewController(secondViewController, animated: true)
         }
+        let alertAction2 = UIAlertAction(title: "Записаться", style: .cancel) { (alert) in }
         
         alert.addAction(alertAction1)
         alert.addAction(alertAction2)

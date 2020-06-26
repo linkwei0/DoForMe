@@ -19,7 +19,7 @@
                                 <rect key="frame" x="84" y="176" width="226" height="175"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.20847945017357394" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="W65-TZ-BCn" secondAttribute="bottom" constant="511" id="AD4-NJ-J53"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="W65-TZ-BCn" secondAttribute="trailing" constant="104" id="ScF-Qk-QcS"/>

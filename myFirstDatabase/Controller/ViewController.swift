@@ -14,8 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnViewSalons: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupNavBar()
     }
+    
+    func setupNavBar() {
+           navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+           navigationController?.navigationBar.shadowImage = UIImage()
+           navigationController?.navigationBar.tintColor = .white
+       }
 
 
     @IBAction func logoutAction(_ sender: Any) {
