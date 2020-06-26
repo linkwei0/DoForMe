@@ -46,7 +46,6 @@ class TableVCServices: UITableViewController {
                   alertErrorEmpty.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                   self.present(alertErrorEmpty, animated: true, completion: nil)
               }
-                  
               else {
                   addItemServices(nameItem: newItem!)
                   self.tableView.reloadData()
@@ -84,7 +83,15 @@ class TableVCServices: UITableViewController {
             alert.message = "от 399 руб"
         }
         
-       
+        let alertAction1 = UIAlertAction(title: "Ок", style: .default) { (alert) in }
+        
+        let alertAction2 = UIAlertAction(title: "Мастера", style: .cancel) { (alert) in
+            let secondViewController = self.storyboard!.instantiateViewController(withIdentifier: "mastersController") as UIViewController
+            self.navigationController?.pushViewController(secondViewController, animated: true)
+        }
+        
+        alert.addAction(alertAction1)
+        alert.addAction(alertAction2)
         
         present(alert, animated: true, completion: nil)
     }
@@ -101,13 +108,28 @@ class TableVCServices: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath)
         
         
-        cell.backgroundColor = UIColor.systemGray3
+        cell.backgroundColor = UIColor.systemYellow
         cell.textLabel?.font = UIFont(name: "Avenir", size: 23)
         
         
         let currentItem = Services[indexPath.row]
         cell.textLabel?.text = currentItem["Name"] as? String
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let degree: Double = 90
+        let rotationAngle = CGFloat(degree * .pi / 180)
+        let rotationTransform = CATransform3DMakeRotation(rotationAngle, 1, 0, 0)
+        cell.layer.transform = rotationTransform
+        
+        UIView.animate(withDuration: 1, delay: 0.2 * Double(indexPath.row), options: .curveEaseInOut, animations: {
+            cell.layer.transform = CATransform3DIdentity
+        })
     }
 
     /*

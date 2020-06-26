@@ -66,27 +66,27 @@ class TableVCSalons: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
-        let num = Int.random(in: 0 ..< 5)
+        let num = Int.random(in: 0 ..< 3)
          
         switch num {
+//        case 0:
+//            //print("Переменная равна", num)
+//            cell.backgroundColor = UIColor.systemGray3
+//        case 1:
+//            //print("Переменная равна", num)
+//            cell.backgroundColor = UIColor.systemRed
         case 0:
-            print("Переменная равна", num)
-            cell.backgroundColor = UIColor.systemGray3
-        case 1:
-            print("Переменная равна", num)
-            cell.backgroundColor = UIColor.systemRed
-        case 2:
-            print("Переменная равна", num)
+            //print("Переменная равна", num)
             cell.backgroundColor = UIColor.systemBlue
-        case 3:
-            print("Переменная равна", num)
+        case 1:
+            //print("Переменная равна", num)
             cell.backgroundColor = UIColor.systemPink
-        case 4:
-            print("Переменная равна", num)
+        case 2:
+            //print("Переменная равна", num)
             cell.backgroundColor = UIColor.systemGreen
-        case 5:
-            print("Переменная равна", num)
-            cell.backgroundColor = UIColor.systemYellow
+//        case 5:
+//            //print("Переменная равна", num)
+//            cell.backgroundColor = UIColor.systemYellow
         default:
             print("не удалось распознать число")
         }

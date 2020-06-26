@@ -10,7 +10,7 @@
         <!--Салоны-->
         <scene sceneID="EBR-vL-mmr">
             <objects>
-                <tableViewController restorationIdentifier="TableViewControllerForSalons" storyboardIdentifier="TableViewControllerForSalons" id="uwC-v5-3FH" customClass="TableVCSalons" customModule="DoForMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="TableViewControllerForSalons" storyboardIdentifier="TableViewControllerForSalons" id="uwC-v5-3FH" customClass="TableVCSalons" customModule="myFirstDatabase" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="e9g-0T-lqq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
         <!--Услуги-->
         <scene sceneID="37e-kJ-I85">
             <objects>
-                <tableViewController restorationIdentifier="servicesController" storyboardIdentifier="servicesController" id="dqN-FM-jOu" customClass="TableVCServices" customModule="DoForMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="servicesController" storyboardIdentifier="servicesController" id="dqN-FM-jOu" customClass="TableVCServices" customModule="myFirstDatabase" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Nqg-6a-cCR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,14 +83,14 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="58E-Ov-5RE">
-                                            <rect key="frame" x="20" y="-8" width="374" height="59.666667938232422"/>
+                                            <rect key="frame" x="20" y="-8" width="374" height="75"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconfinder_info_370079" translatesAutoresizingMaskIntoConstraints="NO" id="1Kl-sm-CBh">
-                                            <rect key="frame" x="360" y="11" width="34" height="41"/>
+                                            <rect key="frame" x="360" y="26" width="34" height="41"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default" weight="light"/>
                                         </imageView>
@@ -125,7 +125,7 @@
         <!--Мастер-->
         <scene sceneID="71l-KU-Xzp">
             <objects>
-                <tableViewController restorationIdentifier="mastersController" storyboardIdentifier="mastersController" id="XLa-Wx-Bdl" customClass="TableVCMasters" customModule="DoForMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="mastersController" storyboardIdentifier="mastersController" id="XLa-Wx-Bdl" customClass="TableVCMasters" customModule="myFirstDatabase" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jZh-rq-KLG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,7 +176,7 @@
         <!--О мастере-->
         <scene sceneID="puq-cz-nzQ">
             <objects>
-                <viewController id="CX2-MA-dMe" customClass="descriptionVC" customModule="DoForMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CX2-MA-dMe" customClass="descriptionVC" customModule="myFirstDatabase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mRU-PU-JRm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -232,18 +232,18 @@
             </objects>
             <point key="canvasLocation" x="6786.9565217391309" y="77.678571428571431"/>
         </scene>
-        <!--Меню-->
+        <!--DoForMe-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DoForMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myFirstDatabase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="WELCOME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6R-3d-2MS">
-                                <rect key="frame" x="133" y="106" width="149" height="34.666666666666686"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Добро пожаловать," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6R-3d-2MS">
+                                <rect key="frame" x="82" y="126" width="250" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -259,10 +259,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zyq-Ho-AZ7">
-                                <rect key="frame" x="141" y="386" width="132" height="58"/>
+                                <rect key="frame" x="112" y="258" width="191" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title="Профиль">
+                                <state key="normal" title="Мой профиль">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -270,10 +270,10 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="0.2129976455479452" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Меню" id="P8v-H0-uin">
+                    <navigationItem key="navigationItem" title="DoForMe" id="P8v-H0-uin">
                         <barButtonItem key="leftBarButtonItem" title="Выйти" id="1ZU-vC-Fav">
                             <color key="tintColor" white="0.26725706335616439" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -305,7 +305,7 @@
         <!--Auth View Controller-->
         <scene sceneID="ZTy-81-WhF">
             <objects>
-                <viewController storyboardIdentifier="AuthViewController" wantsFullScreenLayout="YES" id="Y79-A6-HrV" customClass="AuthViewController" customModule="DoForMe" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AuthViewController" wantsFullScreenLayout="YES" id="Y79-A6-HrV" customClass="AuthViewController" customModule="myFirstDatabase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Nl-DM-Se1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -414,6 +414,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="s3q-9E-bM6">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
