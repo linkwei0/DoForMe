@@ -10,6 +10,7 @@ class AuthViewController: UIViewController {
                 nameField.isHidden = false
                 textLabelLoginAlreadyHave.text = "у вас уже есть аккаунт?"
                 btnLogOrReg?.setTitle("Войти", for: .normal)
+                //Добавил имя
             }
             else{
                 titleLabel.text = "Войти"
@@ -19,7 +20,7 @@ class AuthViewController: UIViewController {
             }
         }
     }
-
+    
     @IBOutlet weak var textLabelLoginAlreadyHave: UILabel!
     @IBOutlet weak var btnLogOrReg: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
@@ -27,12 +28,13 @@ class AuthViewController: UIViewController {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         nameField.delegate = self
         emailField.delegate = self
         passwordField.delegate = self
+        
     }
     
     @IBAction func switchRegLog(_ sender: UIButton) {
@@ -46,25 +48,34 @@ class AuthViewController: UIViewController {
     }
 }
 
-extension AuthViewController:UITextFieldDelegate{
+extension AuthViewController: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         let name = nameField.text!
         let email = emailField.text!
         let password = passwordField.text!
-        
+        //МОЕ
         if (signup){
             if(!name.isEmpty && !email.isEmpty && !password.isEmpty){
-                Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+                Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
                     if error == nil{
-                        if let result = result{
-                            print(result.user.uid)
-                            let ref = Database.database().reference().child("users")
-                            ref.child(result.user.uid).updateChildValues(["name": name, "email": email])
-                            self.dismiss(animated: true, completion: nil)
+                        //if let result = result{
+                        // print(result.user.uid)
+                        //l//et ref = Database.database().reference().child("users")
+                        //ref.child(user.user.uid).updateChildValues(["name": name, "email": email])
+                        print("Пользователь успешно создан")
+                        guard let uid = user?.user.uid else { return }
+                        
+                        let values = ["uid": uid, "name": name]
+                        
+                        Firestore.firestore().collection("users").document(uid).setData(values) { (err) in
+                            if let err = err{
+                                print("Failed", err.localizedDescription)
+                                return
+                            }
+                            
+                            print("Данные успешно сохранены")
                         }
-                    }
-                    else {
-                        print(error?.localizedDescription)
+                        self.dismiss(animated: true, completion: nil)
                     }
                 }
             }
@@ -79,7 +90,7 @@ extension AuthViewController:UITextFieldDelegate{
                         self.dismiss(animated: true, completion: nil)
                     }
                     else {
-                        print(error, error?.localizedDescription)
+                        print(error?.localizedDescription as Any)
                     }
                 }
             }

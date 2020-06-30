@@ -8,6 +8,7 @@
 
 import UIKit
 
+//Пока не использую
 class CustomTextField: UITextField{
     
     let padding: CGFloat

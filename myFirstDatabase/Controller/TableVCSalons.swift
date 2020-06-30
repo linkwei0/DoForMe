@@ -11,6 +11,9 @@ import Firebase
 
 class TableVCSalons: UITableViewController {
     
+    @IBOutlet weak var textLabel: UIBarButtonItem!
+    
+    
     @IBAction func pushAddSalon(_ sender: Any) {
         
         let alertController = UIAlertController(title: "Название салона", message: nil, preferredStyle: .alert)
@@ -35,8 +38,29 @@ class TableVCSalons: UITableViewController {
                 
             else {
                 addItem(nameItem: newItem!)
-                self.tableView.reloadData()
+                //                print("Зашел в создание салона и...")
+                //                //Сейчас
+                //                Auth.auth().createUser(withEmail: "", password: "") { (salon, err) in
+                //                    guard let uid = salon?.user.uid else { return }
+                //
+                //                    let salonName = alertController.textFields![0].text
+                //
+                //                    let values = ["uid": uid, "salonName": salonName]
+                //
+                //                    Firestore.firestore().collection("salons").document(uid).setData(values as [String : Any]) { (err) in
+                //                        if let err = err{
+                //                            print("Ошибка в создание салона", err.localizedDescription)
+                //                            return
+                //                        }
+                //
+                //                        print("Данные о салоне успешно получены")
+                //                        print(self.salon?.uid ?? "")
+                //                        print(self.salon?.salonName ?? "")
+                //                        addItem(nameItem: newItem!)
+                //                    }
+                self.dismiss(animated: true, completion: nil)
             }
+            self.tableView.reloadData()
         }
         
         alertController.addAction(alertAction1)
@@ -48,11 +72,24 @@ class TableVCSalons: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //        fetchCurrentSalon()
         setupNavBar()
         
         tableView.tableFooterView = UIView()
-        //tableView.backgroundColor = UIColor.systemGray5
     }
+    //    func fetchCurrentSalon() {
+    //        Firestore.firestore().fetchCurrentUser { (user, err) in
+    //            if err == nil {
+    //                print("TUT")
+    //                print(self.salon as Any)
+    //                //self.lableWelcome.text = (user?.name)!  + ", добро пожаловать в DoForMe!"
+    //            }
+    //            else {
+    //                print(err?.localizedDescription as Any)
+    //                return
+    //            }
+    //        }
+    //    }
     
     func setupNavBar() {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
@@ -188,5 +225,4 @@ class TableVCSalons: UITableViewController {
      // Pass the selected object to the new view controller.
      }
      */
-    
 }

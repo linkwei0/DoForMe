@@ -24,6 +24,9 @@
 		ADA5E2D52496281400D1EFC2 /* descriptionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA5E2D42496281400D1EFC2 /* descriptionVC.swift */; };
 		ADEF15412453350C00764F21 /* TableVCSalons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF15402453350C00764F21 /* TableVCSalons.swift */; };
 		ADEF15432453353600764F21 /* ModelSalons.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADEF15422453353600764F21 /* ModelSalons.swift */; };
+		ADF0D24D24A61E380026A5FC /* Salon.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0D24C24A61E380026A5FC /* Salon.swift */; };
+		ADF0D24F24A61F200026A5FC /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0D24E24A61F200026A5FC /* Firebase.swift */; };
+		ADF0D25124A6236E0026A5FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF0D25024A6236E0026A5FC /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		ADA5E2D42496281400D1EFC2 /* descriptionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = descriptionVC.swift; sourceTree = "<group>"; };
 		ADEF15402453350C00764F21 /* TableVCSalons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableVCSalons.swift; sourceTree = "<group>"; };
 		ADEF15422453353600764F21 /* ModelSalons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSalons.swift; sourceTree = "<group>"; };
+		ADF0D24C24A61E380026A5FC /* Salon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salon.swift; sourceTree = "<group>"; };
+		ADF0D24E24A61F200026A5FC /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		ADF0D25024A6236E0026A5FC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F134D8B6BDE3466165844D20 /* Pods-myFirstDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-myFirstDatabase.debug.xcconfig"; path = "Target Support Files/Pods-myFirstDatabase/Pods-myFirstDatabase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +83,8 @@
 				AD5A4AFB248D5A8100D3DBE8 /* ModelServices.swift */,
 				AD0A9C272493D1BA000BDE65 /* ModelMasters.swift */,
 				AD12C8A0248780860028F146 /* CustomTextField.swift */,
+				ADF0D25024A6236E0026A5FC /* User.swift */,
+				ADF0D24C24A61E380026A5FC /* Salon.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -98,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				AD9230FD24409386001EEE9F /* Main.storyboard */,
+				ADF0D24E24A61F200026A5FC /* Firebase.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -126,8 +135,8 @@
 				AD5A4AFD248D5C9900D3DBE8 /* Model */,
 				AD8B6389248F7A58001FE952 /* View */,
 				AD5A4AFE248D5CA300D3DBE8 /* Controller */,
-				AD9230F724409386001EEE9F /* AppDelegate.swift */,
 				AD9230F924409386001EEE9F /* SceneDelegate.swift */,
+				AD9230F724409386001EEE9F /* AppDelegate.swift */,
 				AD92310024409387001EEE9F /* Assets.xcassets */,
 				AD92310224409387001EEE9F /* LaunchScreen.storyboard */,
 				AD9A1A93244614B400945AB6 /* GoogleService-Info.plist */,
@@ -261,13 +270,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADF0D24F24A61F200026A5FC /* Firebase.swift in Sources */,
 				AD12C8A1248780860028F146 /* CustomTextField.swift in Sources */,
 				AD5A4AFA248D598600D3DBE8 /* TableVCServices.swift in Sources */,
 				AD9A1A922446033500945AB6 /* AuthViewController.swift in Sources */,
+				ADF0D25124A6236E0026A5FC /* User.swift in Sources */,
 				ADA5E2D52496281400D1EFC2 /* descriptionVC.swift in Sources */,
 				AD0A9C282493D1BA000BDE65 /* ModelMasters.swift in Sources */,
 				AD9230FC24409386001EEE9F /* ViewController.swift in Sources */,
 				AD9230F824409386001EEE9F /* AppDelegate.swift in Sources */,
+				ADF0D24D24A61E380026A5FC /* Salon.swift in Sources */,
 				AD9230FA24409386001EEE9F /* SceneDelegate.swift in Sources */,
 				ADEF15412453350C00764F21 /* TableVCSalons.swift in Sources */,
 				AD5A4AFC248D5A8100D3DBE8 /* ModelServices.swift in Sources */,
